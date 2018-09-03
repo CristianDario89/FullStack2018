@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+@-webkit-keyframes aparece{
+	from{left:-280px; opacity:0.2;color:red;}
+	to{left:0px; opacity:1;color:black;}
+}
+@-webkit-keyframes aparece2{
+	from{right:-370px;opacity:0;}
+	to{right:0px; opacity:1;}
+}
+@-webkit-keyframes aparece3{
+	0{opacity:0;}
+	70%{opacity:0.3;}
+	100%{opacity:1;}
+}
+
+.dbz1{
+	position:relative;
+	animation:aparece 2s;
+	text-shadow:-4px -4px 3px blue;
+	}
+	.dbz2{
+	position:relative;
+	animation:aparece2 4s;
+	text-shadow:-4px -4px 3px blue;
+	}
+	.kepP{
+	opacity:0;
+	animation:aparece3 6s forwards;
+	font-size:15px;
+	}
+/*----------*/
+.gridchico2{
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   width:100%;
+   }
+   .gridchico2 img{
+   border:2px solid red;
+   }
+   
+   /*-----*/
+   .icono{font-size:20px; color:red; 
+   margin-left:3px;}
+   
+   /*--------*/
+   .main{
+   display:flex;
+   
+   } 
+   .main > div{text-align: center;
+   }
+  .main div > ul{margin-right:10px;}
+  /*---------*/
+  .main .centrando{
+  margin:5px auto;
+  }
+  
+  /*---------*/
+  .canva{
+  height: 250px;
+  width: 100%;
+  }
+  /*---------*/
+  .fondo-fila{
+  background: linear-gradient(to left, aqua,white,aqua);
+  }
+  .fondito{
+  background: linear-gradient(to left, green,white);
+  font-family: 'Roboto', serif;
+  }
+  
+ 
+  /*---------*/
+ .fuente{
+// font-family: 'Roboto Slab', serif;
+font-family: 'Playfair Display', serif;
+ }
+ /*---------*/
+  #movies img, #movie img{
+  width:100%;
+  }
+  #movies .col-md-3 .well{
+  height: 290px;
+  }
+  #movies .col-md-3 img{
+  height:180px;
+  } 
+  /*---------*/
+  .parrTit{
+  color:black;
+  font-family: 'Roboto', serif;
+  font-size: 12px;
+
+  }
+  /*----list d libreriaS-----*/
+  #ejemplo{
+  background: linear-gradient(to left, pink,white,pink);
+    width:95%;
+    height: auto;
+  border:2px solid green;
+    }
+  /*-----maegenes de iconos en nav----*/
+  .margIcon{
+  margin-left:150px;
+  }
+      .margIcon2{
+  margin-left:15px;
+  }
+  /*----titulo de angular-----*/
+  .tituAng{
+  background: linear-gradient(to left, white,aqua,white);
+  padding: 5px;
+ 
+  }
+  /*---------*/
+ .fondito2{
+ background: linear-gradient(to left, white,aqua,white);
+ }
+ /*----------*/
+ 
+ .pers p, .fondo2 .pers2 p{
+ color:blue;
+ margin-top:3px;
+ font-family: 'Lobster', cursive;
+// border-bottom:2px solid grey;
+ text-shadow:4px 4px 3px black;
+ }
+ .parrOver{
+ color:red;
+ margin-top:3px;
+ font-family: 'Lobster', cursive;
+ //border-bottom:2px solid grey;
+ }
+ 
+ /*-------*/
+ .cuadro{
+ box-shadow: 3px 3px 3px aqua, -3px -3px 3px aqua;
+ }
+ 
+ /*-------&*/
+ .container2{
+max-width:800px;
+margin:auto;
+border:black solid 2px;
+background: linear-gradient(to left, green,white,green);
+}
+.main-img img, .imgs img{
+width:100%;
+height: 140px;
+border:white solid 3px;
+}
+.main-img img{
+height:220px;
+border:white solid 3px;
+}
+.imgs{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+grid-gap:2px;
+
+}
+ 
+ /*-------*/
+ .lev1 p{
+ margin-bottom:30px;
+ }
+ 
+ /*-------*/
+ .overlayCross{
+height:0;
+width:0;
+top:0;
+left:0;
+background:#00b1ba;
+}
+.overlayFade{
+height:100%;
+width:100%;
+top:0;
+left:0;
+background:#00b1ba;
+transition:2s ease;
+}
+.ok:hover .overlayFade{
+opacity:0.9;
+}
+
+.container:hover .overlayCross{
+height:100%;
+width:100%;
+}
+
+/*-----------Day Night toggle*/
+.cuadro{
+transition:0.5s;
+}
+.cuadro.night{
+background:#00151f;
+}
+
+.toggle{
+position:absolute;
+top:110px;
+right:20px;
+background:#fff;
+border:2px solid #00151f;
+width:45px;
+height:24px;
+cursor:pointer;
+border-radius:20px;
+transition:0.5s;
+}
+.toggle.active{
+background:#00151f;
+border:2px solid #fff;
+}
+.toggle.active:before{
+left:23px;
+background:#fff;
+}
+.toggle:before{
+content:'';
+position: absolute;
+top:2px;left:2px;
+width:16px; height:16px;
+background:#00151f;
+border-radius:50%;
+transition:0.5s;
+}
+
+.cuadro.night{
+color:#fff;
+}
+
+ /*------- Blur ImG -------*/
+ section{
+width:100%;
+height:280px;
+position:relative;
+box-shadow: 0 0 10px 5px black, -10px 0px 50px blue;
+border-radius:7%;    
+}
+
+.layer2{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url(../me2.jpg);
+background-attachment:fixed;
+background-position:center;
+transition:2s;
+border-radius:7%;
+}
+.layer1{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+width:300px;
+height:150px;
+background:url(../me2.jpg);
+background-position:center;
+
+z-index:1;
+transition:2s;
+}
+
+.layer1:hover ~ .layer2{
+filter:blur(10px);
+}
+.layer1:hover{
+box-shadow:0 25px 60px rgba(0,0,0,0.8);
+}
+/*--------sombra mi nombre-----*/
+
+

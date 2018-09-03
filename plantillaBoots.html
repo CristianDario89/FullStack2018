@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="js/p5.min.js"></script>
+    <script src="js/p5.dom.min.js"></script>
+    <script src="js/p5.sound.min.js"></script>
+     <script src="js/sketch.js"></script>
+    
+    <script src="js/fontawesome.js"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/miweb.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    
+    <style type="text/css">
+    
+    .ok h5, .textAnim{
+    line-height:1em;
+    font-size:16px;
+    text-transform:uppercase;
+    background:url(rayas.jpg);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:animar 13s linear infinite;
+    
+    }
+    .textAnim{
+    box-shadow:3px 3px 3px, -3px -3px 3px grey;
+    }
+    
+    @keyframes animar {
+    0% {
+    background-position: 0 0;
+    }
+    100% {
+    background-position: 100% 100%;
+    }
+    }
+   
+   .cloud{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   background:url(img/1/cloud.png);
+   animation:animate 60s linear infinite;
+   }
+   
+   
+   @keyframes animate {
+   0%{
+   background-position: 0px;
+   }
+   100%{
+   background-position: 5440px;
+   }
+   }
+   
+   .index{
+   position:relative;
+   z-index:1000;
+   }
+    </style>
+  </head>
+  <body>
+ <!----------------------------+++--> 
+  <!-----------Wrapper-----------------+++-->
+    <div class="container">
+    <!----------------------------+++--> 
+    <!----------------Row 1------------+++-->
+    <div class="row bg-primary ">
+    <div class="col-12 ">
+    <nav class="navbar navbar-toggleable-md navbar-light index">
+    
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+    <span class="navbar-toggler-icon "></span>
+    </button>
+    <a class="navbar-brand" href="#">Fundamentos en JS<i class="icono fas fa-address-book ml-2"></i>
+    </a>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+    <a class="nav-link" href="https://cristiandario89.github.io/Tourism_in_Argentina-CSSgrid_flex/form.html"><strong>Contact me</strong>
+    <i class="fab fa-google margIcon"></i>
+    <i class="fab fa-facebook"></i>
+    
+    <li class="nav-item active">
+    <a class="nav-link" href="https://CristianDario89.github.io/miCurriculumVitae/cv"><strong>My responsive CV</strong>
+    
+    </a>
+    </li>
+    </ul>
+    </div>
+    </nav>
+    </div></div>
+    <!----------------------------+++--> 
+    <!------------Fin Row1----------------+++-->
+    
+    <!--Header-->
+    <!--------------Row2--------------+++--> 
+    <!----------------------------+++-->
+     <div class="row head">
+     <div class="cloud"> </div>
+     
+      <div class="col-2 ok2 pt-2"><h6 class="dbz1">Stack MEVN</h6>
+      <!----------Overlay-----------------+++--> 
+      <!----------------------------+++-->
+      <div class="overlay overlayLeft">
+      <div class="text-center">
+      <p class="parrTit">Mongo DB<br>
+      Express<br>
+      Vue.js<br>
+      Node.js</p>
+      </div>
+      </div>
+      </div>
+      
+      <div class="col-8 text-center ok p-2"><h6  class="dbz2">Full Stack Developer 2018</h6>
+        
+        <h5 class="mt-3">Single page application</h5>
+        <p class="kepP mt-1">Use modules and optimize apps</p>
+        
+        <div class="overlay overlayFade">
+        <div class="text-center">
+        <p class="p-1 parrTit">Estos son mis conocimientos en JS, tanto en el front-end como backend con node.
+        Sitios web, apps y una API REST que he hecho se muestran funcionando en tiempo real.</p>
+        </div>
+        </div>
+        
+      </div>
+      
+      <div class="col-2 ok2 pt-2"><h6 class="dbz2">Stack MEAN</h6>
+      <!----------Overlay-----------------+++--> 
+      <!----------------------------+++-->
+      <div class="overlay overlayRight">
+      <div class="text-center">
+      <p class="parrTit">Mongo DB<br>
+      Express<br>
+      Angular 5.0<br>
+      Node.js</p>
+      </div>
+      </div>
+      
+      </div>
+      
+     </div>
+   <!--Fin Header-->
+<!----------------------------+++--> 
+  <!---------Fin Row 2-------------------+++-->
+  
+   <!--Main--> 
+   <!---------------row3-------------+++--> 
+   <!----------------------------+++-->
+    <div class="row alto " id="despCan">
+    
+    <!--------------Aside Left--------------+++--> 
+    <!----------------------------+++-->
+    <div class="col-2 fondo">
+    <div class="pers">
+    <h6 class="mt-3">Modules</h6><hr>
+    <p id="centrar">Mongose</p>
+    <p id="alertando">Morgan</p>
+    
+    <p>Body Parse</p>
+    <p>Consign</p>
+    <p>Path</p>
+    <p>Nodemon</p>
+    <p>Ejs</p>
+    <p>Faker</p><hr>
+    <h6>Font-end FW</h6>
+    <p>Vue.js</p>
+    <p>Angular 5.0</p><hr>
+    <h6>Back-end</h6>
+    <p>Express.js</p>
+    </div>
+    </div>
+    <!----------------------------+++--> 
+    <!---------Fin Aside Left-------------------+++-->
+    
+    <!------------Main----------------+++--> 
+    <!----------------------------+++-->
+    <div class="col-8">
+    
+    <div class="row mt-2">
+    <div class="col-12 p-4">
+    
+    <div class="gridchico2">
+    <img src="img/1/1.JPG" alt="" class="parallax1 ">
+    <img src="img/1/2.JPG" alt="" class="parallax1">
+    <img src="img/1/3.JPG" alt="" class="parallax1">
+    
+    </div> 
+    
+    </div> 
+    </div> 
+    <div class="toggle"></div>
+    
+     <h4 class="text-center mt-4 tituAng">Angular 5</h4>
+     <p class="p-2 m-1 cuadro">
+- Nos deja mezclar textos con variables(escritas en app.components.js), permitiéndonos ahorrar líneas de código<br>
+- Cuando hacemos un nuevo componente en nuestro sitio (sidebar,Navbar, Aside, etc) lo vamos a ir dividiendo y tendremos un archivo
+ HTML,CSS y TS, ósea, esto es igual a la inteligencia del HTML.<br>
+ - Siempre actualizar el app.module.ts, el cual lleva todas las importaciones
+ de los componentes que iremos creando.
+ 
+     </p>
+     <!-------------Grid 1---------------+++--> 
+     <!----------------------------+++-->
+      <div class="grid mt-2 mx-auto" id="btnGrid">
+       <!----------Pinterest 4----------->
+       <div class="elemento level-1 ">
+       <img src="img/PartesDominadas_fundamentos/2.png" class="image" alt="" id="l1">
+       
+       </div>
+       
+       <!----------Pinterest 5----------->
+       <div class="elemento level-2">
+       <img src="img/PartesDominadas_fundamentos/3.png" class="image" alt="">
+       <!----------Overlay-----------------+++--> 
+       <!----------------------------+++-->
+        <div class="overlay overlayTop" id="sacando">
+        <div>
+        <div class="text2">
+        <img src="img/Angular/Directivas&service/app.module.ts.png" alt="">
+        
+       <img src="img/Angular/Directivas&service/imgservice.ts.png" alt="">
+       <img src="img/Angular/Directivas&service/html.jpg" alt="">
+       
+       <img src="img/Angular/Directivas&service/getImages1.png" alt="">
+       </div>
+         </div>
+        </div>
+       <!---------Fin-Overlay-----------------+++--> 
+       <!----------------------------+++-->
+       
+       </div>
+       <!----------FIN 5-----------> 
+       
+       <!----------Pinterest 6----------->
+       <div class="elemento level-3">
+       <img src="img/PartesDominadas_fundamentos/4.png" class="image" alt="">
+       
+       <!----------Overlay-----------------+++--> 
+       <!----------------------------+++-->
+       <div class="overlay overlayTop">
+       <div>
+       <div class="text1">
+       <img src="Download/Angular/routing/routes/ObtenerRutasDinamics/rutasModule.ts.png" class="image" alt="">
+       
+       <img src="Download/Angular/routing/routes/ObtenerRutasDinamics/equipo.service.ts.png" class="image" alt="">
+       
+       <img src="Download/Angular/routing/routes/ObtenerRutasDinamics/equipohtml.jpg" class="image" alt="">
+       
+       <img src="Download/Angular/routing/routes/ObtenerRutasDinamics/pantalla.png" class="image" alt="">
+      </div> </div>
+       </div>
+       <!----------Fin Overlay-----------------+++--> 
+       <!----------------------------+++-->
+       </div>
+       
+       <!----------FIN 6----------->
+       <!----------Pinterest 4----------->
+       <div class="elemento level-3">
+       <img src="img/PartesDominadas_fundamentos/5.png" class="image" alt="">
+       
+       </div>
+       
+       <!----------Pinterest 5----------->
+       <div class="elemento level-2">
+       <img src="img/PartesDominadas_fundamentos/7.png" class="image" alt="">
+       
+       </div>
+       <!----------FIN 5-----------> 
+       
+       <!----------Pinterest 6----------->
+       <div class="elemento level-1">
+       <img src="img/PartesDominadas_fundamentos/1.png" class="image" alt="">
+       
+       </div>
+       <!----------FIN 6----------->
+       <!----------Pinterest 4----------->
+     </div><br>
+     <!----------------------------+++--> 
+     <!----------------------------+++-->
+     <!----------FIN Grid 1----------->
+     
+     
+     <!----------Grid 2----------->
+     <!----------------------------+++--> 
+     <!----------------------------+++-->
+
+<h4 class="text-center tituAng">Vue.js</h4>
+     
+<p class="text-center cuadro m-1"> - Vue is perfectly capable of powering sophisticated Single-Page Applications when used in combination
+     with modern tooling and supporting libraries.<br>
+     - At the core of Vue.js is a system that enables us to declaratively render data to the DOM using straightforward template syntax.<br>
+     -The v-bind attribute is called a directive. Directives are prefixed with v- to indicate that they are special attributes provided by Vue,they apply special reactive behavior to the rendered DOM. 
+     </p>
+     
+     <div class="grid mt-2">
+     <!----------Pinterest 4----------->
+     <div class="elemento level-1">
+     <img src="img/vue/Parte6Fatz/5componentePrincipal.png" alt="" id="l1">
+     
+     </div>
+     
+     <!----------Pinterest 5----------->
+     <div class="elemento level-2 ok">
+     <img src="img/vue/Parte6Fatz/5computedUsaTHIS.png" alt="">
+     <!----------Overlay-----------------+++--> 
+     <!----------------------------+++-->
+     <div class="overlay overlayBottom">
+     <div class="text">
+     <p class="text-center">Usando<br> This</p>
+     </div>
+     </div>
+     </div>
+     <!----------FIN 5-----------> 
+     
+     <!----------Pinterest 6----------->
+     <div class="elemento level-3 ok">
+     <img src="img/vue/Parte6Fatz/5fullname().png"" alt="">
+     <!----------Overlay-----------------+++--> 
+     <!----------------------------+++-->
+     <div class="overlay overlayBottom">
+     <div class="text">
+     <p class="text-center pr-2">Usando This para método fullname()</p>
+     </div>
+     </div>
+     </div>
+     
+     <!----------FIN 6----------->
+     <!----------Pinterest 4----------->
+     <div class="elemento level-3">
+     <img src="img/vue/Parte6Fatz/6NewComponentUser.Vue.png" alt="">
+     
+     </div>
+     
+     <!----------Pinterest 5----------->
+     <div class="elemento level-2">
+     <img src="img/vue/part7Fatz/ubicandoUserToDelete.png" alt="">
+     
+     </div>
+     <!----------FIN 5-----------> 
+     
+     <!----------Pinterest 6----------->
+     <div class="elemento level-1">
+     <img src="img/vue/part7Fatz/addNewUserToArrayWithPush.png" alt="">
+     
+     </div>
+     <!----------FIN 6----------->
+     <!----------Pinterest 4----------->
+     </div><br>
+     <!----------------------------+++--> 
+     <!----------------------------+++-->
+     <!----------FIN Grid- 2----------->
+    
+    
+    <!----------Grid 3----------->
+    <!----------------------------+++--> 
+    <!----------------------------+++-->
+    <h4 class="text-center tituAng">Express</h4>
+    <p class="text-center cuadro">
+    - Allows to set up middlewares to respond to HTTP Requests.<br>
+    
+    - Defines a routing table which is used to perform different action based on HTTP Method and URL.<br>
+    
+    - Allows to dynamically render HTML Pages based on passing arguments to templates.<br>
+   <strong> $ npm install express</strong></p>
+    <div class="grid">
+    <!----------Pinterest 4----------->
+    <div class="elemento level-1">
+    <img src="img/express/server.jsmodelo/arregloDeDatoaQRecorreraOurApp.png" alt="">
+    <!----------Overlay-----------------+++--> 
+    <!----------------------------+++-->
+    <div class="overlay overlayTop">
+    <div class="text">
+    <p class="text-center">Array a recorrer</p>
+    </div>
+    </div>
+    </div>
+    
+    <!----------Pinterest 5----------->
+    <div class="elemento level-2">
+    <img src="img/express/server.jsmodelo/arregloDeDatoaQRecorreraOurApp.png" alt="">
+    <!----------Overlay-----------------+++--> 
+    <!----------------------------+++-->
+    <div class="overlay overlayTop">
+    <div class="text3">
+    <img src="img/express/server.jsmodelo/user.js.png" alt="">
+    <img src="img/express/server.jsmodelo/user.js2.png" alt="">
+    
+    </div>
+    </div>
+    </div>
+    <!----------FIN 5-----------> 
+    
+    <!----------Pinterest 6----------->
+    <div class="elemento level-3 ok">
+    <img src="img/express/server.js/3MetDePostQEnviaUserQKieroCrear.png" alt="">
+    <!----------Overlay-----------------+++--> 
+    <!----------------------------+++-->
+    <div class="overlay overlayBottom">
+    <div class="text">
+    <p class="text-center">Método Post, creando usuario</p>
+    </div>
+    </div>
+    </div>
+    
+    <!----------FIN 6----------->
+    <!----------Pinterest 4----------->
+    <div class="elemento level-3 ok">
+    <img src="img/express/server.js/EnviandoArchStaticAlPuerto.png" alt="">
+    <!----------Overlay-----------------+++--> 
+    <!----------------------------+++-->
+    <div class="overlay overlayBottom">
+    <div class="text">
+    <p class="text-center">Enviando Arch static al puerto</p>
+    </div>
+    </div>
+    </div>
+    
+    <!----------Pinterest 5----------->
+    <div class="elemento level-2 ok">
+    <img src="img/express/server.js/ConectingModuleMoongose.png" alt="">
+    <!----------Overlay-----------------+++--> 
+    <!----------------------------+++-->
+    <div class="overlay overlayBottom">
+    <div class="text">
+    <p class="text-center ">Conectando Con Mongoose</p>
+    </div>
+    </div>
+    </div>
+    <!----------FIN 5-----------> 
+    
+    <!----------Pinterest 6----------->
+    <div class="elemento level-1">
+    <img src="img/express/server.js/IMG_20180621_190113_474.JPG" alt="">
+    
+    </div>
+    <!----------FIN 6----------->
+    <!----------Pinterest 4----------->
+    </div>
+    <!----------------------------+++--> 
+    <!----------------------------+++-->
+    <!----------FIN Grid----------->
+    
+    
+    
+    </div>
+    <!----------------------------+++--> 
+    <!--------------Fin Main--------------+++-->
+    
+    <!------------Aside right----------------+++--> 
+    <!----------------------------+++-->
+    <div class="col-2 fondo2">
+    <div class="pers2">
+    <h6 class="mt-3"><strong>Node.js</strong></h6><hr>
+    <p>Typescript</p>
+    <p>JSON</p>
+    <p>API REST</p>
+    <p>Render</p>
+    <p>Scrapping</p>
+    <p>p5 Library</p>
+    <hr>
+    <h6><strong>Functional Javascript</strong></h6>
+    <p>Literals Templates</p>
+    <p>High order functions</p>
+    <p>Async Wait</p>
+    </div>
+    </div>
+    <!----------------------------+++--> 
+    <!------------Fin Asidero Right----------------+++-->
+    
+    </div>
+    <!----------------------------+++--> 
+    <!----------------Fin row3------------+++-->
+    <!--Fin Main-->
+    
+    
+    <!-------main2---Row3 b----------->
+    <!----------------------------+++--> 
+    <!----------------------------+++-->
+    
+    <div class="row fondito2">
+      <div class="col-12">
+       <!----------Grid 4 Row3 b----------->
+       <!----------------------------+++--> 
+       <!----------------------------+++-->
+          
+       <div class="grid4 mt-2">
+       <!----------Mongo Mongo----------->
+       <!----------------------------+++--> 
+       <!----------------------------+++-->
+       <div class="lev1 bg-danger text-center">
+       <h5 class="mt-2"><strong>MongoDB</strong></h5>
+       <p>Utilizada el componente Mongoose para el modelado de datos.</p>
+       
+       </div>
+       
+       <!----------Pinterest 5----------->
+       <div class="lev2">
+       <img src="img/mongo/listaMonGoBaseDdatos.JPG" alt="">
+        
+        <!----------Overlay-----------------+++--> 
+       <!----------------------------+++-->
+       <div class="overlay overlayLeft">
+       <div class="text">
+       <p class="text-center">Usando<br> This</p>
+       </div>
+       </div>
+       </div>
+       <!----------FIN 5-----------> 
+       
+       <!----------Pinterest 6----------->
+       <div class="lev ">
+       <div class="gridchico ">
+       <img src="img/mongo/put()_post.png" alt="">
+       <img src="img/mongo/get.png" alt="">
+       </div>
+       <!----------Overlay-----------------+++--> 
+       <!----------------------------+++-->
+       <div class="overlay overlayLeft">
+       <div class="text">
+       <p class="text-center pr-2">Usando This para método fullname()</p>
+       </div>
+       </div>
+       </div>
+       
+       
+       
+       <!----------FIN mongo----------->
+       
+       <!----------Consign Consign----------->
+       <!----------------------------+++--> 
+       <!----------------------------+++-->
+       <div class="lev1 bg-danger text-center">
+       <h5 class="mt-2"><strong>Consign</strong></h5>
+      <p>Autoload models, routes, schemas, configs, controllers, etc...</p>
+       </div>
+       
+       <!----------Pinterest 5----------->
+       <div class="elemento ">
+       <img src="img/consign/Consign_IncializandoApp_routes_Middlewares.png" alt="">
+       
+       </div>
+       <!----------FIN 5-----------> 
+       
+       <!----------Pinterest 6----------->
+       <div class="elemento ok3 lev">
+       
+       <img src="img/consign/Consign_IncializandoApp_routes_Middlewares.png" alt="">
+       
+       <div class="overlay overlayRight">
+       <div class="text">
+       <p class="text-center ">Inicializado app y routes</p>
+       </div>
+       </div>
+       
+       </div>
+       <!----------FIN Consign----------->
+       
+       <!----------Body-Parse Body-parse----------->
+       <!----------------------------+++--> 
+       <!----------------------------+++-->
+       <div class="lev1 bg-danger text-center">
+       <h5 class="mt-2">Body-Parse</h5>
+       <p>Permite que el servidor reconozca archivos JSON.</p>
+       
+       </div>
+       
+       <!----------Pinterest 5----------->
+       <div class=" lev ok3">
+        <img src="img/Body/addingModuleBodyParser.png" alt="">
+       <div class="overlay overlayLeft">
+       <div class="text">
+       <p class="text-center ">Conectando Con Mongoose</p>
+       </div>
+       </div>
+       </div>
+       <!----------FIN 5-----------> 
+       
+       <!----------Pinterest 6----------->
+       <div class="ok3 lev">
+       <img src="img/Body/IMG_20180623_182146_396.JPG" alt="">
+       <div class="overlay overlayRight">
+       <div class="text ">
+       <p class="text-center">Conectando Con Mongoose</p>
+       </div>
+       </div>
+       </div>
+       <!----------FIN 6----------->
+       <!----------Pinterest 4----------->
+       </div><br>
+       <!----------------------------+++--> 
+       <!----------------------------+++-->
+       <!----------FIN Grid- 2----------->
+      </div> 
+    </div>
+    
+    <div class="row">
+    <div class="col-12">
+     
+         <h6 class="p-3  text-center textAnim">Datos acerca este sitio</h6>
+     </div>
+    </div>
+    
+    <div class="row bg-danger" >
+    <div class="col-4 bg-danger text-center canva pt-2" id="centrar2">
+    <h6 >Contact me</h6>
+    <i class="fab fa-google"></i>
+    <i class="fab fa-facebook "></i>
+    </div>
+    
+    <div class="col-8 bg-success p-2" id="despCan2">
+    <p>Diseñado con: Bootstrap 4, CSS grid, p5 canvas library.</p>
+    <p>Mostrado de información de webs via: Arrays[] y renderizado de variables.</p>
+    <p>Técnicas CSS avanzadas utilizadas: manejo de 5 overlays distintos, uso de animations con @keyframes</p>
+    <p>Editores de texto usados: anWriter Free and WebMasterLite.</p>
+    </div>
+    </div>
+    
+    <div class="row bg-danger pb-3">
+    <div class="col-12">
+    <div id="ejemplo" class="p-2 my-1">
+    <h6>Librerías usadas para diseñar esta web.</h6>
+    <p>link href="bootstrap.min.css"<br>
+    
+    link href="miweb.css"<br>
+    link href="styles2.css"<br>
+    </p>
+    <p>
+    script p5.min.js<br>
+    script p5.dom.min.js<br>
+    script p5.sound.min.js<br>
+ 
+    script fontawesome-free-5.1.0/all.js<br>
+    script jquery-2.1.0.min.js"<br>
+    
+    script https://unpkg.com/axios/dist/axios.min.js<br>
+    
+    script "bootstrap.min.js"<br>
+    script "listas1.js"
+    
+    
+    </p>
+    </div>
+    <button class="btn btn-primary"id="boton">ocultar</button>
+    <button class="btn btn-success ml-4" id="boton2">ver librerias</button>
+    
+    </div>
+    
+    </div>
+  <!-- Párrafo Párrafo --><!-- Párrafo Párrafo -->
+  <!-- Párrafo Párrafo --><!-- Párrafo Párrafo -->
+  <div class="row mt-3 ">
+  <div class="col-12">
+  
+  <h6 class="text-center textAnim p-3">Mis sitios web, apps & API-rest</h6>
+  </div>
+  </div>
+  
+  
+    <div class="row mt-1 bg-success text-center" >
+    
+    <div class="col-12">
+     <div class="cloud"> </div>
+    <h5 class="mt-2">Some of my works on 2017 running via Github </h5>
+    
+    <p class="fuente">Trabajos Diseñados para personas (de distintos países), los cuales cuentan con formulario de contacto, 
+    CRUD para registrar en Base de datos información de libros y clientes, disponibilidad de turnos online, entre otras cosas interesantes.</p>
+    </div>
+    </div> 
+ <!--FIN Párrafo Párrafo --><!--FiN Párrafo Párrafo -->
+    
+<div class="row fondito" >
+<div class="col-12">
+<div class="wrapper ">
+  
+  <div class="main ">
+  <div><br>
+  <h6 >CristianDario89.github.io</h6><br>
+   <p><a href="https://CristianDario89.github.io/RussianLibrary2.0">/RussianLibrary2.0</a></p><br>
+  <p><a href="https://CristianDario89.github.io/LearnPortuguese_withHELBA" >/LearnPortuguese_withHELBA</a></p>
+    <p><a href="https://cristiandario89.github.io/Tourism_in_Argentina-CSSgrid_flex/index.html" >/Tourism_in_Argentina-CSSgrid_flex/index.html</a></p>
+   </div>
+  
+    <div class="centrando">
+    <h4 class="mt-3">Sitos web </h4>
+    <ul id="people"></ul><hr>
+    </div>
+  </div>
+  
+  <div class="main fondito">
+  
+  <div><br>
+  
+  <p>/Atten danceRegister-plusCRUD</p><br>
+  <p>/App_with_login_for<br>_databases_registers</p>
+  <p><a href="https://github.com/CristianDario89/Shopping_Cart__Sessions-JSP.">/Shopping_Cart__Sessions-JSP.</a></p>
+  </div>
+  
+    <div class="centrando ">
+     <h4 class="ml-5">Apps</h4>
+    <ul id="nioquis"></ul><hr>
+    </div>
+    
+ </div>  
+
+</div>
+
+</div>   
+    
+    </div>
+    
+    <div class="row p-2">
+    
+    <div class="col-12">
+    
+    <div class="container2 p-1">
+    
+    <div class="main-img mb-1">
+    <img src="img/1/6.png" id="current">
+    </div>
+    
+    <div class="imgs">
+    <img src="img/1/4.png">
+    <img src="img/1/6.png">
+    <img src="img/1/5.png">
+    </div>
+    </div>
+    
+    
+    </div>
+    </div>
+    
+    <!--slider-->
+    <!---->
+    <!----------------> 
+    <!-------------------------->
+    <!-- Párrafo Párrafo --><!-- Párrafo Párrafo -->
+    <!-- Párrafo Párrafo --><!-- Párrafo Párrafo -->
+    <div class="row bg-success text-center" >
+    <div class="col-12">
+     <div class="cloud"> </div>
+    <h5 class="mt-2">API REST ready to use. </h5>
+    <p class="fuente">Did you say an Api rest?, here You go. Using the axios library to get the Arrays of movies info,
+    carrying out promises on JavaScript, we can get the info to save it in a variable so we can render it in order to appear 
+    in the html file</p>
+    </div>
+    </div> 
+    <!--FIN Párrafo Párrafo --><!--FiN Párrafo Párrafo -->
+    
+<div class="row fondito">
+ <div class="col-12 ">
+ 
+ <nav class="navbar navbar-default ">
+ <div class="container ">
+ <div class="navbar-header">
+ <a class="navbar-brand" href="ApiMovie.html">MovieInfo</a>
+ </div>
+ </div>
+ </nav>
+ 
+ <div class="container">
+ <div class="jumbotron ">
+ <h3 class="text-center">Search For Any Movie</h3>
+ <form id="searchForm">
+ <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+ </form>
+ </div>
+ </div>
+ 
+ <div class="container cuadro">
+ <div id="movies" class="row"></div>
+ </div>
+ 
+ 
+ </div>
+ </div>  
+ 
+ 
+ <div class="row">
+ <div class="col-12 p-3">
+ 
+ <section >
+ <div class="layer1"></div>
+ <div class="layer2"></div>
+ </section>
+ 
+ </div>
+ </div>
+  <!----------Footer-----------------+++--> 
+  <!----------------------------+++-->
+  <div class="row bg-success">
+  
+  <div class="col-12 text-center">
+   <div class="cloud"> </div>
+  <p class="pt-1">ccristiandarioromero@gmail.com<br><strong>Hecho por Cristian Darío</strong>
+  <i class="fab fa-google margIcon2"></i>
+  <i class="fab fa-facebook"></i>
+  <br>
+  https://github.com/CristianDario89/ </p>
+  </div>
+  
+  </div>
+  <!----------Fin footer----------------+++--> 
+  <!----------------------------+++-->
+  </div>
+  
+  
+  
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/listas1.js"></script>
+    
+    <script type="text/javascript">
+    $('#searchForm').on('submit', (e) => {
+    let searchText = $('#searchText').val();
+    getMovies(searchText);
+    e.preventDefault();
+    });
+    
+    function getMovies(searchText){
+    axios.get('http://www.omdbapi.com?s='+searchText+'&apikey=thewdb')
+    .then((response) => {
+    console.log(response);
+    let movies = response.data.Search;
+    let output = '';
+    $.each(movies, (index, movie) => {
+    output += `
+    <div class="col-md-3">
+    <div class="well text-center">
+    <img src="${movie.Poster}">
+    <h5>${movie.Title}</h5>
+    <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="movies.html">Movie Details</a>
+    </div>
+    </div>
+    `;
+    });
+    
+    $('#movies').html(output);
+    })
+    .catch((err) => {
+    console.log(err);
+    });
+    }
+    
+    /*_-------------_*/
+    /*_-------------_*/
+    $("#boton").on("click",function(){
+    $("#ejemplo").slideUp("slow","linear");
+    $(this).animate({
+    marginTop : 20,
+    opacity : 0.5
+    })
+    
+    })
+    
+    $("#boton2").on("click",function(){
+    $("#ejemplo").slideDown("slow","linear");
+    $("#boton").animate({
+    marginBottom : 20,
+    opacity : 1
+    })
+    })
+    /*------------*/
+    
+    const current = document.querySelector("#current");
+    const imgs = document.querySelectorAll(".imgs img");
+    
+    imgs.forEach(img => 
+    img.addEventListener('click', e => (current.src = e.target.src))
+    );
+    
+    /*----------------------*/
+    $(".toggle").click(function(){
+    $(".toggle").toggleClass("active")
+    $(".cuadro").toggleClass("night")
+    })
+    </script>
+    
+  </body>
+</html>

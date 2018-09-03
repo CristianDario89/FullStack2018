@@ -1,0 +1,199 @@
+/*---------*/
+     body {
+     padding:0;
+     margin:0;
+     font-family: Open Sans, sans-serif;
+   
+     }
+     
+     /*---------*/
+     .fondo{
+     background: linear-gradient(to left, white, aqua);
+   
+     }
+     .fondo2{
+     background: linear-gradient(to right, white, aqua);
+    
+     }
+     
+    /*--------------------*/
+    .container{overflow: hidden;}
+    
+    .borde{border:2px solid aqua;}
+    
+    .head{height:100px;}
+    .alto{height:100%;
+    }
+    
+    .grid{
+    display:grid;grid-gap:4px;
+    grid-template-columns: 250px 270px 280px;
+    grid-template-rows:250px;
+    grid-auto-rows:90px;
+    width:100%;
+    overflow: hidden;
+   
+}
+    .grid img, .grid4 img, .gridchico{height:100%; width:100%;display:block;}
+    
+    .level-1{
+    grid-row-end:span 1;
+    }
+    
+    .level-2{
+    grid-row-end:span 2;
+    }
+    
+    .level-3{
+    grid-row-end:span 3;
+    }
+    /*--------------------*/
+    .grid4{
+    display:grid;grid-gap:4px;
+    grid-template-columns: 100px auto;
+    grid-template-rows:85px 240px;
+    grid-auto-rows:85px 240px;
+    width:100%;
+    }
+    
+    .grid4 .lev1{
+    grid-column-end:span 2;
+    }
+    
+    .grid4 .lev2{
+    grid-column-end:span ;
+    }
+    
+    .grid4 .lev3{
+    grid-column-end:span 2 ;
+    }
+    /*--------------------
+    p{font-size:12px;}
+    .pers > p, .pers h6, .pers2 > p{    transform: translate3d(-40%, 0, 0);}*/
+    
+    /*-------------------*/
+    
+    /*--------------------*/
+    .level-3, .level-2, .level-4, .lev{position: relative;}
+    .text,.text2, .text3,.text1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:white;
+    transform:translate(-50%,-50%);
+    }
+    .overlay{
+    position:absolute;
+    transition:all .3s ease;
+    opacity:0;
+    
+    }
+    .level-3:hover .overlay, .level-2:hover .overlay{
+    opacity:1;
+    
+    }
+    .overlayLeft{
+    height:100%;
+    width:0;
+    top:0;
+    left:0;
+    background:#00b1ba;
+    }
+    .overlayRight{
+    height:100%;
+    width:0;
+    top:0;
+    right:0;
+    background: linear-gradient(to right, white, aqua);
+    }
+    .overlayTop{
+    height:0;
+    width:100%;
+    top:0;
+    right:0;
+    }
+    .overlayBottom{
+    height:0;
+    width:100%;
+    bottom:0;
+    right:0;
+    background:#00b1ba;
+    }
+    .ok:hover .overlayBottom{
+    height:100%;
+    opacity:0.9;
+    }
+    .ok2:hover .overlayLeft, .ok2:hover .overlayRight, .ok3:hover .overlayLeft, .ok3:hover .overlayRight{
+    width:100%;
+    opacity:0.8;
+    
+    }
+    .ok2:hover{
+    background:black;
+    transition:1s;
+    }
+    .level-3:hover .overlayTop, .level-2:hover .overlayTop{
+    height:100%;
+    }
+    /*--------------------*/
+ 
+ .text{
+ color:black;
+ font-size:15px;
+ font-weight:bold;
+ text-shadow:3px 3px 3px grey;
+ 
+ }
+    .text1{
+    
+   display:grid;grid-gap:1px;
+   grid-template-columns: 90px;
+   grid-template-rows:30px 40px;
+   grid-auto-rows:40px;
+   width:100%;
+   overflow: hidden;}
+   
+   .text2{
+   
+   display:grid;grid-gap:1px;
+   grid-template-columns: 90px;
+   grid-template-rows:30px 40px;
+   grid-auto-rows:20px;
+   width:100%;
+   overflow: hidden;}
+   
+   .text3{
+   
+   display:grid;grid-gap:1px;
+   grid-template-columns: 90px;
+   grid-template-rows:50px 50px;
+   width:100%;
+   overflow: hidden;}
+   
+   .text1 img, .text2 img, .text3 img{height:100%; width:100%;display:block;}
+  
+   
+   /*--------*/
+   .parallax1{
+   margin-bottom:20px auto;
+   position:relative;
+   opacity:0.70;
+   background-position:center;
+   background-size:cover;
+   background-repeat:no-repeat;
+   background-attachment:fixed;
+   background-color: red;
+   
+   width:100%;
+   }
+   .parallax1{
+   background-image:url('Download/img/1/1.JPG');
+   height:60px;
+   }
+   
+   .gridchico{
+   display:grid;grid-gap:2px;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto;
+   width:100%;
+   }
